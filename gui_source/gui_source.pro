@@ -23,6 +23,8 @@ FORMS += \
 
 include(../build.pri)
 
+XCONFIG += use_extrabuttons
+
 !contains(XCONFIG, elfwidget) {
     XCONFIG += elfwidget
     include(../FormatWidgets/ELF/elfwidget.pri)
